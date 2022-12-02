@@ -1,10 +1,10 @@
-import fs from "fs";
+import fs from 'fs';
 
 const calories = fs
-  .readFileSync("./day1_input.txt")
+  .readFileSync('./day1_input.txt')
   .toString()
-  .split("\n\n")
-  .map((perReindeer) => perReindeer.split("\n"));
+  .split('\n\n')
+  .map((perReindeer) => perReindeer.split('\n'));
 
 function findTheMostTiredReindeer(inputCalories) {
   let maxCal = 0;
